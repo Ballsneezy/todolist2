@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
 <script defer src="main.js"></script></head>
 <body>
-    
+    <div class="grid-container">
+        <header class="header">
+            <h1>Todo List</h1>
+        </header>
+        <nav class="sidebar">
+            <ul>
+                <li>All: 0</li>
+                <li>Completed: 0</li>
+                <li>Incomplete: 0</li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div id="create-todo">
+                <h2>Create a new todo</h2>
+                <form id="create-todo-form">
+                    <input type="text" placeholder="Title">
+                    <input type="date" placeholder="Due Date">
+                    <select name="priority" id="priority" placeholder="Priority">
+                        <option value="" disabled selected>Priority</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <button type="submit">Create</button>
+                </form>
+            </div>
+            <div id="all-tasks">
+                <h3>Todo List</h3>
+                <div class="task-list">
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Todo App</p>
+        </footer>
+    </div>
 </body>
 </html>
